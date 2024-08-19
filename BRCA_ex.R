@@ -1,4 +1,8 @@
 ## Example: BRCA data
+## by Hedenfalk et al. (2001). 'Gene-expression profiles in hereditary breast caner. The New Engliand Journal od Medicine.
+## In this study, we used most important 176 genes in distinguishing BRCA1 and BRCA2
+## The 176 genes' list are available in Hedenfalk et al. (2001)
+
 ## X1: squared distance between patients (mutation types)
 ## X2: squared distance between genes
 
