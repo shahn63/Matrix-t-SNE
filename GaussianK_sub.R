@@ -4,7 +4,7 @@
 ## H = H(perplexity)
 ## P = P_j|i
 
-.Hbeta <-
+Hbeta <-
   function(D, beta){
     P = exp(-D * beta)
     sumP = sum(P)
