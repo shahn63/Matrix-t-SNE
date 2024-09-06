@@ -7,7 +7,7 @@
 ############################################################################
 
 ########################################
-# Description of content:
+# Description of contents:
 ########################################
 
 * Matrix_tSNE_v2.R
@@ -38,6 +38,22 @@ Reference: Hedenfalk et al. (2001). 'Gene-expression profiles in hereditary brea
 To load the data:
 
   load("BRCA176.RData")
+
+
+* jointprob.cpp
+This C++ code in integrated with R via `Rcpp' to efficiently compute the joint probability distibution for Matrix t-SNE. By leveraging C++, the computation is significantly faster compared to pure R implementations, especially for large datasets.
+
+
+* gradient.cpp
+This C++ code in integrated with R via `Rcpp' to efficiently calculate the gradient of the Matrix t-SNE. Using C++ ensures that the gradient descent optimization for embedding the matrix data is performed with high computational efficiency.
+
+
+* GaussianK.R
+This R script provides the functionality to compute Gaussian kernels. This is a modified version of the original t-SNE code.
+
+
+* GaussianJ_sub.R
+This R script offers a sub-function of the Gaussian kernel computation. This is a modified versin of the original t-SNE code.
 
 
 * README.txt:
