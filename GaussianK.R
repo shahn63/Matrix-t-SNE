@@ -15,7 +15,7 @@ d2p<- function(X,perplexity = 15,tol = 1e-5){
       Di = D[i, -i]
       
       # Compute the Gaussian kernel and entropy
-      hbeta = .Hbeta(Di, beta[i])
+      hbeta = Hbeta(Di, beta[i])
       H = hbeta$H; 
       thisP = hbeta$P
       Hdiff = H - logU;
@@ -33,7 +33,7 @@ d2p<- function(X,perplexity = 15,tol = 1e-5){
           else beta[i] = ( beta[i] + betamin) / 2
         }
         
-        hbeta = .Hbeta(Di, beta[i])
+        hbeta = Hbeta(Di, beta[i])
         H = hbeta$H
         thisP = hbeta$P
         Hdiff = H - logU
