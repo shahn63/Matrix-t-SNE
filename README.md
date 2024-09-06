@@ -1,10 +1,10 @@
 # Matrix-t-SNE
 
-################################################################################
+############################################################################
 ##
-##   t-Distributed Stochastic Neighborhood Embedding of Matrix-Variate Data
+##   t-Distributed Stochastic Neighborhood Embedding of Matrix Data
 ##
-################################################################################
+############################################################################
 
 ########################################
 # Description of content:
@@ -12,9 +12,8 @@
 
 * Matrix_tSNE_v2.R
 
-Main source code
-
-- One needs to load the source codes 'GaussianK.R', 'GaussianK_sub.R', 'gradient.cpp', and 'jointprob.R' e.g. via
+This is the main source code for Matrix t-SNE.
+To run thecode, the following source codes must be loaded:
 
   sourceCpp("jointprob.cpp")
   sourceCpp("gradient.cpp")
@@ -24,17 +23,19 @@ Main source code
   
 * BRCA_ex_v2.R
 
-Code to reproduce the analysis of the BRCA data
-- One needs to load the main source code 'Matrix_tSNE.R' e.g. via
-  
+This script reproduces the analysis on breast cancer data.
+Load the main Matrix t-SNE source code 'Matrix_tSNE.R' and the example distance matrices with:
+    
   source("Matrix_tSNE_v2.R")
+  load("BRCA176.RData")
+
 
 * BRCA176.RData
 
-RData file containing row-wise (X1) and column-wise (X2) squared distance matrices of 15 patients and 176 genes from breast cancer data.
-The most importance 176 genes; list in distinguishing BRCA1 and BRCA2 are available in Hedenfalk et al. (2001)
+This `RData' file contains squard distance matrices (row-wise: X1 and column-wise: X2) for 15 patients and 176 genes from breast cancer data. The gene list represents the most important genes in distinguishing BRCA1 and BRCA2, as described in Hedenfalk et al. (2001).
+
 Reference: Hedenfalk et al. (2001). 'Gene-expression profiles in hereditary breast caner. The New Engliand Journal od Medicine.
-- One needs to load the RData file 'BRCA176.RData' e.g. via
+To load the data:
 
   load("BRCA176.RData")
 
@@ -42,13 +43,11 @@ Reference: Hedenfalk et al. (2001). 'Gene-expression profiles in hereditary brea
 * README.txt:
   -----------
 
-  This file.
+  This file provides an overview of the contents and how to use them.
   
-########################################
+###############################################
 # R programming specifications
-########################################
-
-Session info:
+###############################################
 
 It was tested with the following configuration:
 
