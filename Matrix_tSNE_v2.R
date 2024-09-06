@@ -1,12 +1,12 @@
-## this is the code for two given distances as inputs
-## two distances for a matrix data: row-wise squared distance and column-wise squared distance
+## This is the main code for two given squared distances as inputs
+## two distances for a matrix data: row-wise squared distance (X1) and column-wise squared distance(X2)
 ## e.g.) Euclidean distance for general data/ DTW for trajectory data
+## X1: the row-wise squared distance
+## X2: the column-wise squared distance
 ## alpha is a weight
 ## perplexity1 for row (perp^r)
 ## perplexity2 for column (perp^c)
 
-.libPaths("C:/R-4.1.1/library")
-setwd("D:/matrix_tSNE/")
 require(Rcpp)
 require(RcppArmadillo)
 sourceCpp("jointprob.cpp")
