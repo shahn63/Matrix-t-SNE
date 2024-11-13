@@ -5,7 +5,7 @@
 
 ## X1: squared distance between patients (mutation types)
 ## X2: squared distance between genes
-## Load 'BRCA176.RData' which contains squared distance matrice X1 and X2
+## Load 'BRCA176.RData' which contains squared distance matrices X1 and X2
 
 load("BRCA176.RData")
 
