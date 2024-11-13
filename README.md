@@ -55,7 +55,7 @@ This C++ code in integrated with R via `Rcpp' to efficiently calculate the gradi
 This R script provides the functionality to compute Gaussian kernels. This is a modified version of the original t-SNE code.
 
 
-* GaussianJ_sub.R
+* GaussianK_sub.R
   
 This R script offers a sub-function of the Gaussian kernel computation. This is a modified versin of the original t-SNE code.
 
